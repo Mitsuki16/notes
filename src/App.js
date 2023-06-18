@@ -10,11 +10,13 @@ function App() {
         <div
           className="  sm:w-[25em] w-full h-full sm:h-auto 
           sm:max-h-[50pc] min-h-[40pc] overflow-y-auto sm:rounded-xl
-         bg-[#012b3a] text-white border-2 relative border-black "
+         bg-[#012b3a] text-white border-2 static border-black "
         >
           <Routes>
-            <Route path="/" element={<HomePage />}></Route>
-            <Route path="/AddNewNote" element={<AddNote />}></Route>
+            <Route path="/notes">
+            <Route path="/notes/HomePage" element={<HomePage />}></Route>
+            <Route path="/notes/AddEditNote" element={<AddNote />}></Route>
+            </Route>
           </Routes>
           </div>
       </div>
