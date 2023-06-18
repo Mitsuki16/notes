@@ -13,12 +13,10 @@ function App() {
          bg-[#012b3a] text-white border-2 static border-black "
         >
           <Routes>
-            <Route path="/notes">
-            <Route path="/notes/HomePage" element={<HomePage />}></Route>
-            <Route path="/notes/AddEditNote" element={<AddNote />}></Route>
-            </Route>
+            <Route path="/" element={<HomePage />}></Route>
+            <Route path="/AddEditNote" element={<AddNote />}></Route>
           </Routes>
-          </div>
+        </div>
       </div>
     </div>
   );

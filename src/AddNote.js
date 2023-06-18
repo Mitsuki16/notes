@@ -35,7 +35,7 @@ function AddNote() {
     setTitle('')
     setDesc('')
     setNoteEdit('');
-    return navigate("/notes/HomePage");
+    return navigate("/");
   };
 
   useEffect(() => {
@@ -56,7 +56,7 @@ function AddNote() {
   return (
     <div className={colorCode + " text-black h-[77vh] sm:h-[80%]"}>
       <div className={" p-4 h-full  "}>
-        <Link onClick={() => setNoteEdit("")} to="/notes/HomePage">
+        <Link onClick={() => setNoteEdit("")} to="/">
           <div className=" w-10 h-10">
             <img src="/back.png" className="  " />
           </div>

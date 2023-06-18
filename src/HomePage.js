@@ -16,7 +16,7 @@ function HomePage(props) {
   };
    const handleEdit = (id) => {
     setNoteEdit(id)
-    navigate("/notes/AddEditNote")
+    navigate("/AddEditNote")
   };
   let notes_mapped = notes.map((item) => {
     let classes =
@@ -76,7 +76,7 @@ function HomePage(props) {
             notes_mapped
           ) : (
             <div className=" flex justify-center rounded-full flex-col items-center gap-5">
-                <img src='/no_notes_img.avif' className=" max-w-[70%] rounded-full" />
+                <img src='no_notes_img.avif' className=" max-w-[70%] rounded-full" />
               <h1>No Notes</h1>
               <h2 className=" text-xl text-center w-[60%]">Create a Note and it will show up here.</h2>
             </div>
@@ -84,7 +84,7 @@ function HomePage(props) {
         </div>
       </div>
       <Link
-        to="/notes/AddEditNote"
+        to="/AddEditNote"
         className=" w-full cursor-pointer bg-white rounded-t-xl 
     flex items-center justify-around h-20 bottom-0 sticky "
       >
